@@ -1,1819 +1,653 @@
-<!DOCTYPE html><html lang="pt-BR" style="width: 100% !important; margin: 0 !important; padding: 0 !important;"><head>
-<meta charset="utf-8">
+<!DOCTYPE html><html lang="pt-BR"><head>
+	<meta charset="UTF-8">
+			<title>Privacy</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="max-image-preview:large">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<title>Privacy</title>
+<link rel="alternate" type="application/rss+xml" title="Feed para Privacy »" href="feed/index.htm">
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para Privacy »" href="comments/feed/index.htm">
+<script async="" src="js/fbevents.js"></script><script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/privacycela.com\/privacy\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style id="wp-emoji-styles-inline-css">
 
-<style>
-    /* Estilo para o botĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā£o pulsante */
-    .pulsante {
-        display: inline-block;
-        padding: 10px 20px;
-        font-size: 16px;
-        color: #fff;
-         border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        animation: pulse 1.5s infinite;
-    }
-
-    /* AnimaĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā§Ć„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā£o de pulsaĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā§Ć„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā£o */
-    @keyframes pulse {
-        0% {
-            transform: scale(1);
-        }
-        50% {
-            transform: scale(1.1);
-        }
-        100% {
-            transform: scale(1);
-        }
-    }
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
 </style>
+<style id="wp-block-library-inline-css">
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color)}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip:auto!important;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--base: #FFFFFF;--wp--preset--color--contrast: #111111;--wp--preset--color--accent-1: #FFEE58;--wp--preset--color--accent-2: #F6CFF4;--wp--preset--color--accent-3: #503AA8;--wp--preset--color--accent-4: #686868;--wp--preset--color--accent-5: #FBFAF3;--wp--preset--color--accent-6: color-mix(in srgb, currentColor 20%, transparent);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 0.875rem;--wp--preset--font-size--medium: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.196), 1.125rem);--wp--preset--font-size--large: clamp(1.125rem, 1.125rem + ((1vw - 0.2rem) * 0.392), 1.375rem);--wp--preset--font-size--x-large: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 0.392), 2rem);--wp--preset--font-size--xx-large: clamp(2.15rem, 2.15rem + ((1vw - 0.2rem) * 1.333), 3rem);--wp--preset--font-family--manrope: Manrope, sans-serif;--wp--preset--font-family--fira-code: "Fira Code", monospace;--wp--preset--spacing--20: 10px;--wp--preset--spacing--30: 20px;--wp--preset--spacing--40: 30px;--wp--preset--spacing--50: clamp(30px, 5vw, 50px);--wp--preset--spacing--60: clamp(30px, 7vw, 70px);--wp--preset--spacing--70: clamp(50px, 7vw, 90px);--wp--preset--spacing--80: clamp(70px, 10vw, 140px);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 645px;--wp--style--global--wide-size: 1340px; }:where(body) { margin: 0; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) { padding-right: 0; padding-left: 0; }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) > .alignfull { margin-left: 0; margin-right: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 1.2rem; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 1.2rem; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 1.2rem;}:root :where(.is-layout-grid){gap: 1.2rem;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{background-color: var(--wp--preset--color--base);color: var(--wp--preset--color--contrast);font-family: var(--wp--preset--font-family--manrope);font-size: var(--wp--preset--font-size--large);font-weight: 300;letter-spacing: -0.1px;line-height: 1.4;--wp--style--root--padding-top: 0px;--wp--style--root--padding-right: var(--wp--preset--spacing--50);--wp--style--root--padding-bottom: 0px;--wp--style--root--padding-left: var(--wp--preset--spacing--50);}a:where(:not(.wp-element-button)){color: currentColor;text-decoration: underline;}:root :where(a:where(:not(.wp-element-button)):hover){text-decoration: none;}h1, h2, h3, h4, h5, h6{font-weight: 400;letter-spacing: -0.1px;line-height: 1.125;}h1{font-size: var(--wp--preset--font-size--xx-large);}h2{font-size: var(--wp--preset--font-size--x-large);}h3{font-size: var(--wp--preset--font-size--large);}h4{font-size: var(--wp--preset--font-size--medium);}h5{font-size: var(--wp--preset--font-size--small);letter-spacing: 0.5px;}h6{font-size: var(--wp--preset--font-size--small);font-weight: 700;letter-spacing: 1.4px;text-transform: uppercase;}:root :where(.wp-element-button, .wp-block-button__link){background-color: var(--wp--preset--color--contrast);border-width: 0;color: var(--wp--preset--color--base);font-family: inherit;font-size: var(--wp--preset--font-size--medium);line-height: inherit;padding-top: 1rem;padding-right: 2.25rem;padding-bottom: 1rem;padding-left: 2.25rem;text-decoration: none;}:root :where(.wp-element-button:hover, .wp-block-button__link:hover){background-color: color-mix(in srgb, var(--wp--preset--color--contrast) 85%, transparent);border-color: transparent;color: var(--wp--preset--color--base);}:root :where(.wp-element-button:focus, .wp-block-button__link:focus){outline-color: var(--wp--preset--color--accent-4);outline-offset: 2px;}:root :where(.wp-element-caption, .wp-block-audio figcaption, .wp-block-embed figcaption, .wp-block-gallery figcaption, .wp-block-image figcaption, .wp-block-table figcaption, .wp-block-video figcaption){font-size: var(--wp--preset--font-size--small);line-height: 1.4;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-base-color{color: var(--wp--preset--color--base) !important;}.has-contrast-color{color: var(--wp--preset--color--contrast) !important;}.has-accent-1-color{color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-color{color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-color{color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-color{color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-color{color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-color{color: var(--wp--preset--color--accent-6) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-background-color{background-color: var(--wp--preset--color--base) !important;}.has-contrast-background-color{background-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-background-color{background-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-background-color{background-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-background-color{background-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-background-color{background-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-background-color{background-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-background-color{background-color: var(--wp--preset--color--accent-6) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-border-color{border-color: var(--wp--preset--color--base) !important;}.has-contrast-border-color{border-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-border-color{border-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-border-color{border-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-border-color{border-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-border-color{border-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-border-color{border-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-border-color{border-color: var(--wp--preset--color--accent-6) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-xx-large-font-size{font-size: var(--wp--preset--font-size--xx-large) !important;}.has-manrope-font-family{font-family: var(--wp--preset--font-family--manrope) !important;}.has-fira-code-font-family{font-family: var(--wp--preset--font-family--fira-code) !important;}
+</style>
+<style id="wp-block-template-skip-link-inline-css">
 
-
-	
-	<style type="text/css">
-	.swal-icon--error {
-		border-color: #f27474;
-		-webkit-animation: animateErrorIcon .5s;
-		animation: animateErrorIcon .5s
-	}
-
-	.swal-icon--error__x-mark {
-		position: relative;
-		display: block;
-		-webkit-animation: animateXMark .5s;
-		animation: animateXMark .5s
-	}
-
-	.swal-icon--error__line {
-		position: absolute;
-		height: 5px;
-		width: 47px;
-		background-color: #f27474;
-		display: block;
-		top: 37px;
-		border-radius: 2px
-	}
-
-	.swal-icon--error__line--left {
-		-webkit-transform: rotate(45deg);
-		transform: rotate(45deg);
-		left: 17px
-	}
-
-	.swal-icon--error__line--right {
-		-webkit-transform: rotate(-45deg);
-		transform: rotate(-45deg);
-		right: 16px
-	}
-
-	@-webkit-keyframes animateErrorIcon {
-		0% {
-			-webkit-transform: rotateX(100deg);
-			transform: rotateX(100deg);
-			opacity: 0
+		.skip-link.screen-reader-text {
+			border: 0;
+			clip: rect(1px,1px,1px,1px);
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
 		}
 
-		to {
-			-webkit-transform: rotateX(0deg);
-			transform: rotateX(0deg);
-			opacity: 1
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip: auto !important;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
 		}
-	}
-
-	@keyframes animateErrorIcon {
-		0% {
-			-webkit-transform: rotateX(100deg);
-			transform: rotateX(100deg);
-			opacity: 0
-		}
-
-		to {
-			-webkit-transform: rotateX(0deg);
-			transform: rotateX(0deg);
-			opacity: 1
-		}
-	}
-
-	@-webkit-keyframes animateXMark {
-		0% {
-			-webkit-transform: scale(.4);
-			transform: scale(.4);
-			margin-top: 26px;
-			opacity: 0
-		}
-
-		50% {
-			-webkit-transform: scale(.4);
-			transform: scale(.4);
-			margin-top: 26px;
-			opacity: 0
-		}
-
-		80% {
-			-webkit-transform: scale(1.15);
-			transform: scale(1.15);
-			margin-top: -6px
-		}
-
-		to {
-			-webkit-transform: scale(1);
-			transform: scale(1);
-			margin-top: 0;
-			opacity: 1
-		}
-	}
-
-	@keyframes animateXMark {
-		0% {
-			-webkit-transform: scale(.4);
-			transform: scale(.4);
-			margin-top: 26px;
-			opacity: 0
-		}
-
-		50% {
-			-webkit-transform: scale(.4);
-			transform: scale(.4);
-			margin-top: 26px;
-			opacity: 0
-		}
-
-		80% {
-			-webkit-transform: scale(1.15);
-			transform: scale(1.15);
-			margin-top: -6px
-		}
-
-		to {
-			-webkit-transform: scale(1);
-			transform: scale(1);
-			margin-top: 0;
-			opacity: 1
-		}
-	}
-
-	.swal-icon--warning {
-		border-color: #f8bb86;
-		-webkit-animation: pulseWarning .75s infinite alternate;
-		animation: pulseWarning .75s infinite alternate
-	}
-
-	.swal-icon--warning__body {
-		width: 5px;
-		height: 47px;
-		top: 10px;
-		border-radius: 2px;
-		margin-left: -2px
-	}
-
-	.swal-icon--warning__body,
-	.swal-icon--warning__dot {
-		position: absolute;
-		left: 50%;
-		background-color: #f8bb86
-	}
-
-	.swal-icon--warning__dot {
-		width: 7px;
-		height: 7px;
-		border-radius: 50%;
-		margin-left: -4px;
-		bottom: -11px
-	}
-
-	@-webkit-keyframes pulseWarning {
-		0% {
-			border-color: #f8d486
-		}
-
-		to {
-			border-color: #f8bb86
-		}
-	}
-
-	@keyframes pulseWarning {
-		0% {
-			border-color: #f8d486
-		}
-
-		to {
-			border-color: #f8bb86
-		}
-	}
-
-	.swal-icon--success {
-		border-color: #a5dc86
-	}
-
-	.swal-icon--success:after,
-	.swal-icon--success:before {
-		content: "";
-		border-radius: 50%;
-		position: absolute;
-		width: 60px;
-		height: 120px;
-		background: #fff;
-		-webkit-transform: rotate(45deg);
-		transform: rotate(45deg)
-	}
-
-	.swal-icon--success:before {
-		border-radius: 120px 0 0 120px;
-		top: -7px;
-		left: -33px;
-		-webkit-transform: rotate(-45deg);
-		transform: rotate(-45deg);
-		-webkit-transform-origin: 60px 60px;
-		transform-origin: 60px 60px
-	}
-
-	.swal-icon--success:after {
-		border-radius: 0 120px 120px 0;
-		top: -11px;
-		left: 30px;
-		-webkit-transform: rotate(-45deg);
-		transform: rotate(-45deg);
-		-webkit-transform-origin: 0 60px;
-		transform-origin: 0 60px;
-		-webkit-animation: rotatePlaceholder 4.25s ease-in;
-		animation: rotatePlaceholder 4.25s ease-in
-	}
-
-	.swal-icon--success__ring {
-		width: 80px;
-		height: 80px;
-		border: 4px solid hsla(98, 55%, 69%, .2);
-		border-radius: 50%;
-		box-sizing: content-box;
-		position: absolute;
-		left: -4px;
-		top: -4px;
-		z-index: 2
-	}
-
-	.swal-icon--success__hide-corners {
-		width: 5px;
-		height: 90px;
-		background-color: #fff;
-		padding: 1px;
-		position: absolute;
-		left: 28px;
-		top: 8px;
-		z-index: 1;
-		-webkit-transform: rotate(-45deg);
-		transform: rotate(-45deg)
-	}
-
-	.swal-icon--success__line {
-		height: 5px;
-		background-color: #a5dc86;
-		display: block;
-		border-radius: 2px;
-		position: absolute;
-		z-index: 2
-	}
-
-	.swal-icon--success__line--tip {
-		width: 25px;
-		left: 14px;
-		top: 46px;
-		-webkit-transform: rotate(45deg);
-		transform: rotate(45deg);
-		-webkit-animation: animateSuccessTip .75s;
-		animation: animateSuccessTip .75s
-	}
-
-	.swal-icon--success__line--long {
-		width: 47px;
-		right: 8px;
-		top: 38px;
-		-webkit-transform: rotate(-45deg);
-		transform: rotate(-45deg);
-		-webkit-animation: animateSuccessLong .75s;
-		animation: animateSuccessLong .75s
-	}
-
-	@-webkit-keyframes rotatePlaceholder {
-		0% {
-			-webkit-transform: rotate(-45deg);
-			transform: rotate(-45deg)
-		}
-
-		5% {
-			-webkit-transform: rotate(-45deg);
-			transform: rotate(-45deg)
-		}
-
-		12% {
-			-webkit-transform: rotate(-405deg);
-			transform: rotate(-405deg)
-		}
-
-		to {
-			-webkit-transform: rotate(-405deg);
-			transform: rotate(-405deg)
-		}
-	}
-
-	@keyframes rotatePlaceholder {
-		0% {
-			-webkit-transform: rotate(-45deg);
-			transform: rotate(-45deg)
-		}
-
-		5% {
-			-webkit-transform: rotate(-45deg);
-			transform: rotate(-45deg)
-		}
-
-		12% {
-			-webkit-transform: rotate(-405deg);
-			transform: rotate(-405deg)
-		}
-
-		to {
-			-webkit-transform: rotate(-405deg);
-			transform: rotate(-405deg)
-		}
-	}
-
-	@-webkit-keyframes animateSuccessTip {
-		0% {
-			width: 0;
-			left: 1px;
-			top: 19px
-		}
-
-		54% {
-			width: 0;
-			left: 1px;
-			top: 19px
-		}
-
-		70% {
-			width: 50px;
-			left: -8px;
-			top: 37px
-		}
-
-		84% {
-			width: 17px;
-			left: 21px;
-			top: 48px
-		}
-
-		to {
-			width: 25px;
-			left: 14px;
-			top: 45px
-		}
-	}
-
-	@keyframes animateSuccessTip {
-		0% {
-			width: 0;
-			left: 1px;
-			top: 19px
-		}
-
-		54% {
-			width: 0;
-			left: 1px;
-			top: 19px
-		}
-
-		70% {
-			width: 50px;
-			left: -8px;
-			top: 37px
-		}
-
-		84% {
-			width: 17px;
-			left: 21px;
-			top: 48px
-		}
-
-		to {
-			width: 25px;
-			left: 14px;
-			top: 45px
-		}
-	}
-
-	@-webkit-keyframes animateSuccessLong {
-		0% {
-			width: 0;
-			right: 46px;
-			top: 54px
-		}
-
-		65% {
-			width: 0;
-			right: 46px;
-			top: 54px
-		}
-
-		84% {
-			width: 55px;
-			right: 0;
-			top: 35px
-		}
-
-		to {
-			width: 47px;
-			right: 8px;
-			top: 38px
-		}
-	}
-
-	@keyframes animateSuccessLong {
-		0% {
-			width: 0;
-			right: 46px;
-			top: 54px
-		}
-
-		65% {
-			width: 0;
-			right: 46px;
-			top: 54px
-		}
-
-		84% {
-			width: 55px;
-			right: 0;
-			top: 35px
-		}
-
-		to {
-			width: 47px;
-			right: 8px;
-			top: 38px
-		}
-	}
-
-	.swal-icon--info {
-		border-color: #c9dae1
-	}
-
-	.swal-icon--info:before {
-		width: 5px;
-		height: 29px;
-		bottom: 17px;
-		border-radius: 2px;
-		margin-left: -2px
-	}
-
-	.swal-icon--info:after,
-	.swal-icon--info:before {
-		content: "";
-		position: absolute;
-		left: 50%;
-		background-color: #c9dae1
-	}
-
-	.swal-icon--info:after {
-		width: 7px;
-		height: 7px;
-		border-radius: 50%;
-		margin-left: -3px;
-		top: 19px
-	}
-
-	.swal-icon {
-		width: 80px;
-		height: 80px;
-		border-width: 4px;
-		border-style: solid;
-		border-radius: 50%;
-		padding: 0;
-		position: relative;
-		box-sizing: content-box;
-		margin: 20px auto
-	}
-
-	.swal-icon:first-child {
-		margin-top: 32px
-	}
-
-	.swal-icon--custom {
-		width: auto;
-		height: auto;
-		max-width: 100%;
-		border: none;
-		border-radius: 0
-	}
-
-	.swal-icon img {
-		max-width: 100%;
-		max-height: 100%
-	}
-
-	.swal-title {
-		color: rgba(0, 0, 0, .65);
-		font-weight: 600;
-		text-transform: none;
-		position: relative;
-		display: block;
-		padding: 13px 16px;
-		font-size: 27px;
-		line-height: normal;
-		text-align: center;
-		margin-bottom: 0
-	}
-
-	.swal-title:first-child {
-		margin-top: 26px
-	}
-
-	.swal-title:not(:first-child) {
-		padding-bottom: 0
-	}
-
-	.swal-title:not(:last-child) {
-		margin-bottom: 13px
-	}
-
-	.swal-text {
-		font-size: 16px;
-		position: relative;
-		float: none;
-		line-height: normal;
-		vertical-align: top;
-		text-align: left;
-		display: inline-block;
-		margin: 0;
-		padding: 0 10px;
-		font-weight: 400;
-		color: rgba(0, 0, 0, .64);
-		max-width: calc(100% - 20px);
-		overflow-wrap: break-word;
-		box-sizing: border-box
-	}
-
-	.swal-text:first-child {
-		margin-top: 45px
-	}
-
-	.swal-text:last-child {
-		margin-bottom: 45px
-	}
-
-	.swal-footer {
-		text-align: right;
-		padding-top: 13px;
-		margin-top: 13px;
-		padding: 13px 16px;
-		border-radius: inherit;
-		border-top-left-radius: 0;
-		border-top-right-radius: 0
-	}
-
-	.swal-button-container {
-		margin: 5px;
-		display: inline-block;
-		position: relative
-	}
-
-	.swal-button {
-		background-color: #7cd1f9;
-		color: #fff;
-		border: none;
-		box-shadow: none;
-		border-radius: 5px;
-		font-weight: 600;
-		font-size: 14px;
-		padding: 10px 24px;
-		margin: 0;
-		cursor: pointer
-	}
-
-	.swal-button:not([disabled]):hover {
-		background-color: #78cbf2
-	}
-
-	.swal-button:active {
-		background-color: #70bce0
-	}
-
-	.swal-button:focus {
-		outline: none;
-		box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(43, 114, 165, .29)
-	}
-
-	.swal-button[disabled] {
-		opacity: .5;
-		cursor: default
-	}
-
-	.swal-button::-moz-focus-inner {
-		border: 0
-	}
-
-	.swal-button--cancel {
-		color: #555;
-		background-color: #efefef
-	}
-
-	.swal-button--cancel:not([disabled]):hover {
-		background-color: #e8e8e8
-	}
-
-	.swal-button--cancel:active {
-		background-color: #d7d7d7
-	}
-
-	.swal-button--cancel:focus {
-		box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(116, 136, 150, .29)
-	}
-
-	.swal-button--danger {
-		background-color: #e64942
-	}
-
-	.swal-button--danger:not([disabled]):hover {
-		background-color: #df4740
-	}
-
-	.swal-button--danger:active {
-		background-color: #cf423b
-	}
-
-	.swal-button--danger:focus {
-		box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(165, 43, 43, .29)
-	}
-
-	.swal-content {
-		padding: 0 20px;
-		margin-top: 20px;
-		font-size: medium
-	}
-
-	.swal-content:last-child {
-		margin-bottom: 20px
-	}
-
-	.swal-content__input,
-	.swal-content__textarea {
-		-webkit-appearance: none;
-		background-color: #fff;
-		border: none;
-		font-size: 14px;
-		display: block;
-		box-sizing: border-box;
-		width: 100%;
-		border: 1px solid rgba(0, 0, 0, .14);
-		padding: 10px 13px;
-		border-radius: 2px;
-		transition: border-color .2s
-	}
-
-	.swal-content__input:focus,
-	.swal-content__textarea:focus {
-		outline: none;
-		border-color: #6db8ff
-	}
-
-	.swal-content__textarea {
-		resize: vertical
-	}
-
-	.swal-button--loading {
-		color: transparent
-	}
-
-	.swal-button--loading~.swal-button__loader {
-		opacity: 1
-	}
-
-	.swal-button__loader {
-		position: absolute;
-		height: auto;
-		width: 43px;
-		z-index: 2;
-		left: 50%;
-		top: 50%;
-		-webkit-transform: translateX(-50%) translateY(-50%);
-		transform: translateX(-50%) translateY(-50%);
-		text-align: center;
-		pointer-events: none;
-		opacity: 0
-	}
-
-	.swal-button__loader div {
-		display: inline-block;
-		float: none;
-		vertical-align: baseline;
-		width: 9px;
-		height: 9px;
-		padding: 0;
-		border: none;
-		margin: 2px;
-		opacity: .4;
-		border-radius: 7px;
-		background-color: hsla(0, 0%, 100%, .9);
-		transition: background .2s;
-		-webkit-animation: swal-loading-anim 1s infinite;
-		animation: swal-loading-anim 1s infinite
-	}
-
-	.swal-button__loader div:nth-child(3n+2) {
-		-webkit-animation-delay: .15s;
-		animation-delay: .15s
-	}
-
-	.swal-button__loader div:nth-child(3n+3) {
-		-webkit-animation-delay: .3s;
-		animation-delay: .3s
-	}
-
-	@-webkit-keyframes swal-loading-anim {
-		0% {
-			opacity: .4
-		}
-
-		20% {
-			opacity: .4
-		}
-
-		50% {
-			opacity: 1
-		}
-
-		to {
-			opacity: .4
-		}
-	}
-
-	@keyframes swal-loading-anim {
-		0% {
-			opacity: .4
-		}
-
-		20% {
-			opacity: .4
-		}
-
-		50% {
-			opacity: 1
-		}
-
-		to {
-			opacity: .4
-		}
-	}
-
-	.swal-overlay {
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		text-align: center;
-		font-size: 0;
-		overflow-y: auto;
-		background-color: rgba(0, 0, 0, .4);
-		z-index: 10000;
-		pointer-events: none;
-		opacity: 0;
-		transition: opacity .3s
-	}
-
-	.swal-overlay:before {
-		content: " ";
-		display: inline-block;
-		vertical-align: middle;
-		height: 100%
-	}
-
-	.swal-overlay--show-modal {
-		opacity: 1;
-		pointer-events: auto
-	}
-
-	.swal-overlay--show-modal .swal-modal {
-		opacity: 1;
-		pointer-events: auto;
-		box-sizing: border-box;
-		-webkit-animation: showSweetAlert .3s;
-		animation: showSweetAlert .3s;
-		will-change: transform
-	}
-
-	.swal-modal {
-		width: 478px;
-		opacity: 0;
-		pointer-events: none;
-		background-color: #fff;
-		text-align: center;
-		border-radius: 5px;
-		position: static;
-		margin: 20px auto;
-		display: inline-block;
-		vertical-align: middle;
-		-webkit-transform: scale(1);
-		transform: scale(1);
-		-webkit-transform-origin: 50% 50%;
-		transform-origin: 50% 50%;
-		z-index: 10001;
-		transition: opacity .2s, -webkit-transform .3s;
-		transition: transform .3s, opacity .2s;
-		transition: transform .3s, opacity .2s, -webkit-transform .3s
-	}
-
-	@media (max-width:500px) {
-		.swal-modal {
-			width: calc(100% - 20px)
-		}
-	}
-
-	@-webkit-keyframes showSweetAlert {
-		0% {
-			-webkit-transform: scale(1);
-			transform: scale(1)
-		}
-
-		1% {
-			-webkit-transform: scale(.5);
-			transform: scale(.5)
-		}
-
-		45% {
-			-webkit-transform: scale(1.05);
-			transform: scale(1.05)
-		}
-
-		80% {
-			-webkit-transform: scale(.95);
-			transform: scale(.95)
-		}
-
-		to {
-			-webkit-transform: scale(1);
-			transform: scale(1)
-		}
-	}
-
-	@keyframes showSweetAlert {
-		0% {
-			-webkit-transform: scale(1);
-			transform: scale(1)
-		}
-
-		1% {
-			-webkit-transform: scale(.5);
-			transform: scale(.5)
-		}
-
-		45% {
-			-webkit-transform: scale(1.05);
-			transform: scale(1.05)
-		}
-
-		80% {
-			-webkit-transform: scale(.95);
-			transform: scale(.95)
-		}
-
-		to {
-			-webkit-transform: scale(1);
-			transform: scale(1)
-		}
-	}
-	</style>
-	<style class="vjs-styles-defaults">
-	.video-js {
-		width: 300px;
-		height: 150px;
-	}
-
-	.vjs-fluid:not(.vjs-audio-only-mode) {
-		padding-top: 56.25%
-	}
-	</style>
-	<!-- Required meta tags -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="description" content="Inscreva-se para ganhar dinheiro interagindo com seus fĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā£s! Compartilhe conteĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć…ā€”do exclusivo.">
-	<meta name="robots" content="index, follow">
-	<meta name="keywords" content="privacy, sejaprivacy, privacidade, onlyfans, nudes, rede social paga, ganhar dinheiro, renda extra, privacy nudes, vender privacy, ganhar na privacy, cadastrar privacy, conta privacy, Vale a pena privacy, Como ganhar na privacy, onlyfans privacy, onlyfans brasileiro, privacy nudz, nudes de famosas. Bume, Clozzy, Quanto ganho na privacy">
- 	<meta property="og:title" content="Privacy">
-	<meta property="og:locale" content="pt_BR">
-	<meta property="og:description" content="Privacidade & Liberdade.">
-	<meta property="og:image" content="https://privacy.com.br/assets/img/logo/logo_colorido.jpg">
-	<meta name="kdt:page" content="profile"><script async="" defer="" src="js/pixel.js"></script><script async="" defer="" src="js/pixel_1.js"></script><script async="" defer="" src="js/pixel_2_1.js"></script><script async="" defer="" src="js/pixel_2.js"></script></head><body>
-	<title> Privacy | Gil Ohara</title>
-	<link rel="icon" type="image/png" href="https://privacy.com.br/assets/img/logo/logo.png">
-	<link rel="apple-touch-icon" sizes="128x128" href="https://privacy.com.br/assets/img/logo/logo.png">
-	<link rel="icon" sizes="192x192" href="https://privacy.com.br/assets/img/logo/logo.png">
-	<!-- Fonts -->
-	<style type="text/css">
-	@font-face {
-		font-family: Montserrat;
-		font-style: normal;
-		font-weight: 600;
-		src: url(/cf-fonts/s/montserrat/5.0.16/latin/600/normal.woff2);
-		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Montserrat;
-		font-style: normal;
-		font-weight: 600;
-		src: url(/cf-fonts/s/montserrat/5.0.16/latin-ext/600/normal.woff2);
-		unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Montserrat;
-		font-style: normal;
-		font-weight: 600;
-		src: url(/cf-fonts/s/montserrat/5.0.16/cyrillic-ext/600/normal.woff2);
-		unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Montserrat;
-		font-style: normal;
-		font-weight: 600;
-		src: url(/cf-fonts/s/montserrat/5.0.16/vietnamese/600/normal.woff2);
-		unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Montserrat;
-		font-style: normal;
-		font-weight: 600;
-		src: url(/cf-fonts/s/montserrat/5.0.16/cyrillic/600/normal.woff2);
-		unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Montserrat;
-		font-style: normal;
-		font-weight: 700;
-		src: url(/cf-fonts/s/montserrat/5.0.16/cyrillic/700/normal.woff2);
-		unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Montserrat;
-		font-style: normal;
-		font-weight: 700;
-		src: url(/cf-fonts/s/montserrat/5.0.16/cyrillic-ext/700/normal.woff2);
-		unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Montserrat;
-		font-style: normal;
-		font-weight: 700;
-		src: url(/cf-fonts/s/montserrat/5.0.16/latin-ext/700/normal.woff2);
-		unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Montserrat;
-		font-style: normal;
-		font-weight: 700;
-		src: url(/cf-fonts/s/montserrat/5.0.16/vietnamese/700/normal.woff2);
-		unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Montserrat;
-		font-style: normal;
-		font-weight: 700;
-		src: url(/cf-fonts/s/montserrat/5.0.16/latin/700/normal.woff2);
-		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Montserrat;
-		font-style: normal;
-		font-weight: 800;
-		src: url(/cf-fonts/s/montserrat/5.0.16/cyrillic/800/normal.woff2);
-		unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Montserrat;
-		font-style: normal;
-		font-weight: 800;
-		src: url(/cf-fonts/s/montserrat/5.0.16/cyrillic-ext/800/normal.woff2);
-		unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Montserrat;
-		font-style: normal;
-		font-weight: 800;
-		src: url(/cf-fonts/s/montserrat/5.0.16/latin/800/normal.woff2);
-		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Montserrat;
-		font-style: normal;
-		font-weight: 800;
-		src: url(/cf-fonts/s/montserrat/5.0.16/vietnamese/800/normal.woff2);
-		unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Montserrat;
-		font-style: normal;
-		font-weight: 800;
-		src: url(/cf-fonts/s/montserrat/5.0.16/latin-ext/800/normal.woff2);
-		unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Montserrat;
-		font-style: normal;
-		font-weight: 900;
-		src: url(/cf-fonts/s/montserrat/5.0.16/cyrillic-ext/900/normal.woff2);
-		unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Montserrat;
-		font-style: normal;
-		font-weight: 900;
-		src: url(/cf-fonts/s/montserrat/5.0.16/vietnamese/900/normal.woff2);
-		unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Montserrat;
-		font-style: normal;
-		font-weight: 900;
-		src: url(/cf-fonts/s/montserrat/5.0.16/cyrillic/900/normal.woff2);
-		unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Montserrat;
-		font-style: normal;
-		font-weight: 900;
-		src: url(/cf-fonts/s/montserrat/5.0.16/latin-ext/900/normal.woff2);
-		unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Montserrat;
-		font-style: normal;
-		font-weight: 900;
-		src: url(/cf-fonts/s/montserrat/5.0.16/latin/900/normal.woff2);
-		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-		font-display: swap;
-	}
-	</style>
-	<style type="text/css">
-	@font-face {
-		font-family: Roboto;
-		font-style: normal;
-		font-weight: 400;
-		src: url(/cf-fonts/s/roboto/5.0.11/latin/400/normal.woff2);
-		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Roboto;
-		font-style: normal;
-		font-weight: 400;
-		src: url(/cf-fonts/s/roboto/5.0.11/latin-ext/400/normal.woff2);
-		unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Roboto;
-		font-style: normal;
-		font-weight: 400;
-		src: url(/cf-fonts/s/roboto/5.0.11/cyrillic-ext/400/normal.woff2);
-		unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Roboto;
-		font-style: normal;
-		font-weight: 400;
-		src: url(/cf-fonts/s/roboto/5.0.11/cyrillic/400/normal.woff2);
-		unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Roboto;
-		font-style: normal;
-		font-weight: 400;
-		src: url(/cf-fonts/s/roboto/5.0.11/greek/400/normal.woff2);
-		unicode-range: U+0370-03FF;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Roboto;
-		font-style: normal;
-		font-weight: 400;
-		src: url(/cf-fonts/s/roboto/5.0.11/vietnamese/400/normal.woff2);
-		unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Roboto;
-		font-style: normal;
-		font-weight: 400;
-		src: url(/cf-fonts/s/roboto/5.0.11/greek-ext/400/normal.woff2);
-		unicode-range: U+1F00-1FFF;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Roboto;
-		font-style: normal;
-		font-weight: 500;
-		src: url(/cf-fonts/s/roboto/5.0.11/latin-ext/500/normal.woff2);
-		unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Roboto;
-		font-style: normal;
-		font-weight: 500;
-		src: url(/cf-fonts/s/roboto/5.0.11/cyrillic/500/normal.woff2);
-		unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Roboto;
-		font-style: normal;
-		font-weight: 500;
-		src: url(/cf-fonts/s/roboto/5.0.11/vietnamese/500/normal.woff2);
-		unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Roboto;
-		font-style: normal;
-		font-weight: 500;
-		src: url(/cf-fonts/s/roboto/5.0.11/cyrillic-ext/500/normal.woff2);
-		unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Roboto;
-		font-style: normal;
-		font-weight: 500;
-		src: url(/cf-fonts/s/roboto/5.0.11/greek-ext/500/normal.woff2);
-		unicode-range: U+1F00-1FFF;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Roboto;
-		font-style: normal;
-		font-weight: 500;
-		src: url(/cf-fonts/s/roboto/5.0.11/greek/500/normal.woff2);
-		unicode-range: U+0370-03FF;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: Roboto;
-		font-style: normal;
-		font-weight: 500;
-		src: url(/cf-fonts/s/roboto/5.0.11/latin/500/normal.woff2);
-		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-		font-display: swap;
-	}
-	</style>
-	<link rel="stylesheet" href="css/fontisto-brands.min.css">
-	<!-- Core CSS -->
-	<link rel="stylesheet" href="css/all.min.css">
-	<link rel="stylesheet" href="css/bulma.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-	<link rel="stylesheet" href="css/app.css">
-	<link rel="stylesheet" href="css/core.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-	<link rel="stylesheet" href="css/privacy.css">
-	<link rel="stylesheet" href="css/index.min.css">
-	<link rel="stylesheet" href="css/privacy.components.css">
-	<style type="text/css">
-	@font-face {
-		font-family: Abel;
-		font-style: normal;
-		font-weight: 400;
-		src: url(/cf-fonts/s/abel/5.0.11/latin/400/normal.woff2);
-		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-		font-display: swap;
-	}
-	</style>
-	<link rel="stylesheet" href="css/balloon.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-	<link rel="stylesheet" href="css/jquery.fancybox.min.css" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/blueimp-gallery.min.css" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/slick.css" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/slick-theme.css" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/video-js.min.css" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/photoswipe.min.css" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/privacy.components.skeleton.css" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/perfil.css">
-	<link rel="stylesheet" href="css/pagamento.css">
-	<style>
-	* {
-		-webkit-overflow-scrolling: auto !important;
-	}
-
-	:root {
-		--see-more: "Ver Mais";
-		--see-less: "Ver Menos";
-		--show-more: "mostrar mais";
-		--show-less: "mostrar menos";
-	}
-
-	.animate {
-		transition: all 0.3s;
-		-webkit-transition: all 0.3s;
-		-moz-transition: all 0.3s;
-		transition-timing-function: cubic-bezier(.94, -0.03, .11, 1.02);
-		-webkit-transition-timing-function: cubic-bezier(.94, -0.03, .11, 1.02);
-		-moz-transition-timing-function: cubic-bezier(.94, -0.03, .11, 1.02);
-	}
-
-	.hide-navbar {
-		transform: translateY(-300px);
-	}
-	</style>
-	<style type="text/css">
-	@font-face {
-		font-family: Abel;
-		font-style: normal;
-		font-weight: 400;
-		src: url(/cf-fonts/s/abel/5.0.11/latin/400/normal.woff2);
-		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-		font-display: swap;
-	}
-	</style>
-	<link rel="stylesheet" href="css/profile.css">
-	<style>
-	.parent {
-		width: 100%;
-		white-space: nowrap;
-		box-sizing: border-box;
-		overflow-x: auto;
-		position: relative;
-		/*padding-top: 8px;*/
-		padding-bottom: 10px;
-	}
-
-	.child {
-		display: inline-block;
-		text-align: center;
-		font-size: 11px;
-		font-weight: bold;
-		letter-spacing: 1px;
-		padding-bottom: 12px;
-		padding-left: 1px;
-	}
-
-	.has-tooltip {
-		display: flex;
-	}
-
-	.icon-chat,
-	.icon-tip {
-		margin-right: 10px;
-		width: 26x;
-		height: 26px;
-		margin-top: 4px;
-		padding: 2px;
-		border-radius: 50%;
-		border: 1.5px solid #919191 !important;
-		align-items: center;
-		display: flex;
-	}
-
-	.icon-tip {
-		cursor: pointer;
-	}
-	</style>
- 
- 	<style type="text/css" id="operaUserStyle"></style>   
- 
-
-
- 	<div id="loadProgress" style="position: fixed; background-color: white; top: 0; right: 0; bottom: 0; left: 0; z-index: 999999999999; display: none;">
-		<p id="progressBar" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-			<progress style="width: 300px; height: 100px; vertical-align: middle;" value="0" max="100"></progress> <span style="font-size: 30px; font-weight: bold;">0%</span>
-		</p>
-	</div>
-	<div class="pageloader"><img src="images/logo.svg" alt=""></div>
-	<div class="infraloader"></div>
-	<div class="app-overlay"></div>
-	<div id="app-teleport"></div> 
- 	<!-- Desktop Navbar -->
-	<div id="main-navbar" class="navbar isl-inline-flex is-transparent is-hidden-mobile no-shadow" style="z-index:1000">
-		<div class="container is-fluid">
-			<div class="navbar-brand">
-				<a class="navbar-item">
-					<img src="images/logo.svg" width="112" height="28" style="margin-top: 20px; margin-left:19px" alt="">
-				</a>
-			</div>
-			<div class="navbar-menu">
-				<div class="navbar-start">
+</style>
+<link rel="stylesheet" id="twentytwentyfive-style-css" href="css/style.css" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="css/frontend.min.css" media="all">
+<link rel="stylesheet" id="swiper-css" href="css/swiper.min.css" media="all">
+<link rel="stylesheet" id="e-swiper-css" href="css/e-swiper.min.css" media="all">
+<link rel="stylesheet" id="elementor-post-11-css" href="css/post-11.css" media="all">
+<link rel="stylesheet" id="elementor-pro-css" href="css/frontend.min_1.css" media="all">
+<link rel="stylesheet" id="widget-image-css" href="css/widget-image.min.css" media="all">
+<link rel="stylesheet" id="widget-heading-css" href="css/widget-heading.min.css" media="all">
+<link rel="stylesheet" id="widget-spacer-css" href="css/widget-spacer.min.css" media="all">
+<link rel="stylesheet" id="widget-video-css" href="css/widget-video.min.css" media="all">
+<link rel="stylesheet" id="elementor-post-7-css" href="css/post-7.css" media="all">
+<link rel="stylesheet" id="google-fonts-1-css" href="css-1" media="all">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link rel="https://api.w.org/" href="wp-json/index.htm"><link rel="alternate" title="JSON" type="application/json" href="wp-json/wp/v2/pages/7"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.7.1">
+<link rel="canonical" href="index.htm">
+<link rel="shortlink" href="index.htm">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="wp-json/oembed/1.0/embed?url=https%3A%2F%2Fprivacycela.com%2Fprivacy%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="wp-json/oembed/1.0/embed-1?url=https%3A%2F%2Fprivacycela.com%2Fprivacy%2F&format=xml">
+<!-- Analytics by WP Statistics v14.11.4 - https://wp-statistics.com -->
+<meta name="generator" content="Elementor 3.25.11; features: e_font_icon_svg, additional_custom_breakpoints, e_optimized_control_loading, e_element_cache; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1266772761313177');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="../tr?id=1266772761313177&ev=PageView&noscript=1"></noscript>
+<!-- End Meta Pixel Code -->
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<style class="wp-fonts-local">
+@font-face{font-family:Manrope;font-style:normal;font-weight:200 800;font-display:fallback;src:url('fonts/Manrope-VariableFont_wght.woff2') format('woff2');}
+@font-face{font-family:"Fira Code";font-style:normal;font-weight:300 700;font-display:fallback;src:url('fonts/FiraCode-VariableFont_wght.woff2') format('woff2');}
+</style>
+<link rel="icon" href="images/cropped-download-32x32.png" sizes="32x32">
+<link rel="icon" href="images/cropped-download-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="images/cropped-download-180x180.png">
+<meta name="msapplication-TileImage" content="https://privacycela.com/privacy/wp-content/uploads/2024/12/cropped-download-270x270.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><script src="https://privacycela.com/privacy/wp-includes/js/wp-emoji-release.min.js?ver=6.7.1" defer=""></script></head>
+<body class="home page-template page-template-elementor_canvas page page-id-7 wp-embed-responsive elementor-default elementor-template-canvas elementor-kit-11 elementor-page elementor-page-7">
+			<div data-elementor-type="wp-page" data-elementor-id="7" class="elementor elementor-7" data-elementor-post-type="page">
+				<div class="elementor-element elementor-element-74867ff elementor-hidden-desktop elementor-hidden-tablet e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="74867ff" data-element_type="container" data-settings="{" background_background":"classic"}"="">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-735a152 elementor-widget elementor-widget-image" data-id="735a152" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="376" height="91" src="images/logo.svg" class="attachment-full size-full wp-image-19" alt="">													</div>
 				</div>
-				<div class="navbar-end">
-					 
-					<!-- MENSAGENS -->
-					<div class="navbar-item is-icon">
-						<a class="icon-link" href="">
-							<div>
-								<privacy-web-chatnotifier app-settings="eyJFTkRQT0lOVF9BUElfQ0hBVCI6Imh0dHBzOi8vc2VydmljZS5wcml2YWN5LmNvbS5ici9jaGF0IiwiRU5EUE9JTlRfQVBJX0NIQVRfV1MiOiJ3c3M6Ly9zZXJ2aWNlLXdlYnNvY2tldC5wcml2YWN5LmNvbS5ici9jaGF0IiwiUFJJVkFDWV9VUkwiOiJodHRwczovL3ByaXZhY3kuY29tLmJyIiwiUFJJVkFDWV9NT0RVTEVTIjoiaHR0cHM6Ly9tb2R1bGVzLnByaXZhY3kuY29tLmJyIn0=" token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4NmFhMjYyYy0wZmY0LTQwYzYtYjFiOS0xMGY4ODBiZmE1YjUiLCJlbWFpbCI6ImNvbnRhdG8ucmhkQGdtYWlsLmNvbSIsInVpZCI6IjQyNzMyOTYiLCJhaWQiOiI3ODFhNmM2MC01YTZmLTRjZDUtOWM4My1iZDFhZTgwOGFjZmUiLCJjb3VudHJ5IjoiQlIiLCJpYXQiOjE3MzA5ODM4NzMsInByb2ZpbGVfbmFtZSI6Ijc4MUE2QzYwLTVBNkYtNENENS05QzgzLUJEMUFFODA4QUNGRSIsInJvbGUiOiJDbGllbnQiLCJleHAiOjE3MzEwMDU1MzIsImlzcyI6IlByaXZhY3kifQ.2GxtiHVdRC5nrOaZMiU8HdEvqS3wpm87e6p9b-g3ouI" enabled-push-notification="enabled-push-notification" alert-width="16" alert-height="15" top="14" right="4" stop-connection-if-hidden="true">
-									<div style="display: flex; align-items: center; justify-content: center;" slot="icon-content">
-										<img src="images/Chat.svg">
-									</div>
-								</privacy-web-chatnotifier>
-							</div>
- 
-						</a>
 					</div>
-					 
 				</div>
-			</div>
+		<div class="elementor-element elementor-element-ee56d81 elementor-hidden-desktop elementor-hidden-tablet e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="ee56d81" data-element_type="container" data-settings="{" background_background":"classic"}"="">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-055a3f4 elementor-widget elementor-widget-heading" data-id="055a3f4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">
+Gil Ohara</h2>		</div>
+				</div>
+		<div class="elementor-element elementor-element-e4edd04 e-con-full e-flex e-con e-child" data-id="e4edd04" data-element_type="container">
+				<div class="elementor-element elementor-element-045f31e elementor-view-default elementor-widget elementor-widget-icon" data-id="045f31e" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512"><path d="M19,0H5A5.006,5.006,0,0,0,0,5V19a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5V5A5.006,5.006,0,0,0,19,0ZM5,2H19a3,3,0,0,1,3,3V19a2.951,2.951,0,0,1-.3,1.285l-9.163-9.163a5,5,0,0,0-7.072,0L2,14.586V5A3,3,0,0,1,5,2ZM5,22a3,3,0,0,1-3-3V17.414l4.878-4.878a3,3,0,0,1,4.244,0L20.285,21.7A2.951,2.951,0,0,1,19,22Z"></path><path d="M16,10.5A3.5,3.5,0,1,0,12.5,7,3.5,3.5,0,0,0,16,10.5Zm0-5A1.5,1.5,0,1,1,14.5,7,1.5,1.5,0,0,1,16,5.5Z"></path></svg>			</div>
 		</div>
-	</div>
-	<!-- Tablet Navbar -->
-	<nav class="d-block navbar mobile-navbar is-hidden-desktop is-hidden-mobile no-shadow" aria-label="main navigation" style="z-index:1000">
-		<div class="d-block navbar-brand" style="padding-bottom: 0.6rem">
-			<a class="d-inline-flex navbar-item-logo">
-				<img src="images/logo_mobile.svg" style="max-height: 50px; max-width: 50px; height: 37px; animation: none;" alt="">
-			</a>
-			<div class="align-self-end d-inline-flex float-right">
-				 
-				 
-				<div class="navbar-item is-icon">
-					<a class="icon-link" href="">
-						<div>
-							<privacy-web-chatnotifier app-settings="eyJFTkRQT0lOVF9BUElfQ0hBVCI6Imh0dHBzOi8vc2VydmljZS5wcml2YWN5LmNvbS5ici9jaGF0IiwiRU5EUE9JTlRfQVBJX0NIQVRfV1MiOiJ3c3M6Ly9zZXJ2aWNlLXdlYnNvY2tldC5wcml2YWN5LmNvbS5ici9jaGF0IiwiUFJJVkFDWV9VUkwiOiJodHRwczovL3ByaXZhY3kuY29tLmJyIiwiUFJJVkFDWV9NT0RVTEVTIjoiaHR0cHM6Ly9tb2R1bGVzLnByaXZhY3kuY29tLmJyIn0=" token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4NmFhMjYyYy0wZmY0LTQwYzYtYjFiOS0xMGY4ODBiZmE1YjUiLCJlbWFpbCI6ImNvbnRhdG8ucmhkQGdtYWlsLmNvbSIsInVpZCI6IjQyNzMyOTYiLCJhaWQiOiI3ODFhNmM2MC01YTZmLTRjZDUtOWM4My1iZDFhZTgwOGFjZmUiLCJjb3VudHJ5IjoiQlIiLCJpYXQiOjE3MzA5ODM4NzMsInByb2ZpbGVfbmFtZSI6Ijc4MUE2QzYwLTVBNkYtNENENS05QzgzLUJEMUFFODA4QUNGRSIsInJvbGUiOiJDbGllbnQiLCJleHAiOjE3MzEwMDU1MzIsImlzcyI6IlByaXZhY3kifQ.2GxtiHVdRC5nrOaZMiU8HdEvqS3wpm87e6p9b-g3ouI" enabled-push-notification="enabled-push-notification" alert-width="16" alert-height="15" top="14" right="4" stop-connection-if-hidden="true">
-								<div style="display: flex; align-items: center; justify-content: center;" slot="icon-content">
-									<img src="images/Chat.svg">
-								</div>
-							</privacy-web-chatnotifier>
-						</div>
-				 
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-ba91b14 elementor-widget elementor-widget-heading" data-id="ba91b14" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">30</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-df3837b elementor-view-default elementor-widget elementor-widget-icon" data-id="df3837b" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="512" height="512"><path d="M12,17c-2.76,0-5-2.24-5-5s2.24-5,5-5,5,2.24,5,5-2.24,5-5,5Z"></path></svg>			</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-bb7326e elementor-view-default elementor-widget elementor-widget-icon" data-id="bb7326e" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="512" height="512"><path d="M22.903,6.538c-.676-.338-1.473-.267-2.077,.188-.039,.029-.076,.062-.11,.096l-1.757,1.773c-.211-2.565-2.341-4.594-4.959-4.594H5C2.243,4,0,6.243,0,9v6c0,2.757,2.243,5,5,5H14c2.629,0,4.768-2.047,4.962-4.627l1.756,1.754c.034,.033,.069,.063,.107,.092,.352,.264,.768,.398,1.188,.398,.303,0,.606-.069,.89-.211,.677-.338,1.097-1.019,1.097-1.774v-7.318c0-.757-.42-1.437-1.097-1.775Zm-8.903,11.462H5c-1.654,0-3-1.346-3-3v-6c0-1.654,1.346-3,3-3H14c1.654,0,3,1.346,3,3v6c0,1.654-1.346,3-3,3Zm5-5.417v-1.189l3-3.028,.025,7.238-3.025-3.022Z"></path></svg>			</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-60341da elementor-widget elementor-widget-heading" data-id="60341da" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">30</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-ee6c4d3 elementor-view-default elementor-widget elementor-widget-icon" data-id="ee6c4d3" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="512" height="512"><path d="M12,17c-2.76,0-5-2.24-5-5s2.24-5,5-5,5,2.24,5,5-2.24,5-5,5Z"></path></svg>			</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-b5c145d elementor-view-default elementor-widget elementor-widget-icon" data-id="b5c145d" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="512" height="512"><g id="_01_align_center" data-name="01 align center"><path d="M17.5.917a6.4,6.4,0,0,0-5.5,3.3A6.4,6.4,0,0,0,6.5.917,6.8,6.8,0,0,0,0,7.967c0,6.775,10.956,14.6,11.422,14.932l.578.409.578-.409C13.044,22.569,24,14.742,24,7.967A6.8,6.8,0,0,0,17.5.917ZM12,20.846c-3.253-2.43-10-8.4-10-12.879a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,7.967h2a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,7.967C22,12.448,15.253,18.416,12,20.846Z"></path></g></svg>			</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-33c31ec elementor-widget elementor-widget-heading" data-id="33c31ec" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">1,2k</h2>		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-ec90eca elementor-widget elementor-widget-spacer" data-id="ec90eca" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-7cd50b3 elementor-hidden-desktop elementor-hidden-tablet e-flex e-con-boxed e-con e-parent" data-id="7cd50b3" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-f260ed9 e-con-full e-flex e-con e-child" data-id="f260ed9" data-element_type="container">
+				<div class="elementor-element elementor-element-e2f87ad elementor-widget-mobile__width-initial elementor-widget elementor-widget-image" data-id="e2f87ad" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img fetchpriority="high" decoding="async" width="1078" height="1078" src="images/Imagem-do-WhatsApp-de-2024-12-12-as-21.42.24_579ca64c-e1734057278553.webp" class="attachment-full size-full wp-image-64" alt="" srcset="images/Imagem-do-WhatsApp-de-2024-12-12-as-21.42.24_579ca64c-e1734057278553.webp 1078w, images/Imagem-do-WhatsApp-de-2024-12-12-as-21.42.24_579ca64c-e1734057278553-300x300.webp 300w, images/Imagem-do-WhatsApp-de-2024-12-12-as-21.42.24_579ca64c-e1734057278553-1024x1024.webp 1024w, images/Imagem-do-WhatsApp-de-2024-12-12-as-21.42.24_579ca64c-e1734057278553-150x150.webp 150w, images/Imagem-do-WhatsApp-de-2024-12-12-as-21.42.24_579ca64c-e1734057278553-768x768.webp 768w" sizes="(max-width: 1078px) 100vw, 1078px">													</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-bc0997b e-con-full e-flex e-con e-child" data-id="bc0997b" data-element_type="container">
+				<div class="elementor-element elementor-element-6b9e8ab elementor-widget elementor-widget-heading" data-id="6b9e8ab" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">
+Gil Ohara</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-f5e6ccd elementor-view-default elementor-widget elementor-widget-icon" data-id="f5e6ccd" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="512" height="512"><path d="M12,24c-1.626,0-3.16-.714-4.208-1.959-1.54,.176-3.127-.405-4.277-1.555-1.149-1.15-1.729-2.74-1.59-4.362-1.211-.964-1.925-2.498-1.925-4.124s.714-3.16,1.96-4.208c-.175-1.537,.405-3.127,1.555-4.277,1.15-1.15,2.737-1.733,4.361-1.59,.964-1.21,2.498-1.925,4.124-1.925s3.16,.714,4.208,1.959c1.542-.173,3.127,.405,4.277,1.555,1.149,1.15,1.729,2.74,1.59,4.362,1.211,.964,1.925,2.498,1.925,4.124s-.714,3.16-1.96,4.208c.175,1.537-.405,3.127-1.555,4.277-1.151,1.15-2.741,1.726-4.361,1.59-.964,1.21-2.498,1.925-4.124,1.925Zm-4.127-3.924c.561,0,1.081,.241,1.448,.676,.668,.793,1.644,1.248,2.679,1.248s2.011-.455,2.679-1.248c.403-.479,.99-.721,1.616-.67,1.034,.087,2.044-.28,2.776-1.012,.731-.731,1.1-1.743,1.012-2.776-.054-.624,.19-1.213,.67-1.617,.792-.667,1.247-1.644,1.247-2.678s-.455-2.011-1.247-2.678c-.479-.403-.724-.993-.67-1.617,.088-1.033-.28-2.045-1.012-2.776s-1.748-1.094-2.775-1.012c-.626,.056-1.214-.191-1.617-.669-.668-.793-1.644-1.248-2.679-1.248s-2.011,.455-2.679,1.248c-.404,.479-.993,.719-1.616,.67-1.039-.09-2.044,.28-2.776,1.012-.731,.731-1.1,1.743-1.012,2.776,.054,.624-.19,1.213-.67,1.617-.792,.667-1.247,1.644-1.247,2.678s.455,2.011,1.247,2.678c.479,.403,.724,.993,.67,1.617-.088,1.033,.28,2.045,1.012,2.776,.732,.731,1.753,1.095,2.775,1.012,.057-.005,.113-.007,.169-.007Zm4.928-4.941l4.739-4.568c.397-.383,.409-1.017,.025-1.414-.383-.397-1.016-.409-1.414-.026l-4.752,4.581c-.391,.391-1.022,.391-1.44-.025l-2.278-2.117c-.402-.375-1.036-.353-1.413,.052-.376,.404-.353,1.037,.052,1.413l2.252,2.092c.586,.586,1.357,.879,2.126,.879,.765,0,1.526-.289,2.104-.866Z"></path></svg>			</div>
+		</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-a6f3e65 e-con-full e-flex e-con e-child" data-id="a6f3e65" data-element_type="container">
+				<div class="elementor-element elementor-element-6e14f8f elementor-widget elementor-widget-heading" data-id="6e14f8f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">
+@oharagil_</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-bbfcbe3 elementor-widget elementor-widget-html" data-id="bbfcbe3" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descrição Expandível</title>
+    <link href="css2" rel="stylesheet">
+    <style>
+        /* Definindo a fonte para Inter e o tamanho da fonte */
+        body {
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            color: #67748e; /* Cor do texto */
+        }
+
+        /* Limita a altura do texto para 4 linhas */
+        .limited {
+            max-height: 6em; /* Aproximadamente 4 linhas de texto */
+            overflow: hidden; /* Esconde o excesso de texto */
+            position: relative;
+            margin: 0; /* Remove qualquer margem */
+            padding-bottom: 0; /* Remove qualquer padding no final */
+        }
+
+        /* Esconde o checkbox visualmente, mas ainda o mantém funcional */
+        .read-more-checker {
+            display: none;
+        }
+
+        /* Estilo do botão "Ler mais" */
+        .view-more-button {
+            color: #FD7350; /* Cor laranja */
+            font-size: 15px;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+            margin-top: 0; /* Remover qualquer margem no botão */
+            font-weight: 400; /* Peso 400 */
+            padding: 0; /* Remover padding */
+            line-height: 1.2; /* Ajuste para que o botão fique mais próximo do texto */
+        }
+
+        /* Expande o texto quando o checkbox está marcado */
+        .read-more-checker:checked + .limited {
+            max-height: none; /* Remove o limite de altura */
+        }
+
+        /* Estilo para o gradiente no fundo da descrição */
+        .bottom {
+            position: absolute;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 80%);
+            width: 100%;
+            height: 40px;
+            display: block;
+        }
+
+    </style>
+
+
+
+    <div class="profile-description">
+        <!-- Checkbox invisível, mas ainda funcional -->
+        <input type="checkbox" class="read-more-checker" id="read-more-checker">
+        
+        <div class="limited">
+            <p>Oii amor! sou a Gil tenho 1,60 de altura peso 56kg e pezinho 35. aqui você vai encontrar conteúdos explíc. sem censura, prévias muito generosas e vídeos completos solo, com amiguinhas. 👅 Assina e me chama pra contar a experiência. vou fazer você aproveitar o mês da melhor forma possível! Vem passar o mês comigo!
+            <br><br>
+            dependendo da nossa conversa(se nos dermos bem) você pode até conseguir um encontro 🙈
+            <br><br>
+            </p>
+            <div class="bottom"></div>
+        </div>
+        
+        <!-- Botão "Ler mais" -->
+        <label for="read-more-checker" class="view-more-button">Ler mais</label>
+    </div>
+
+ 
+  
+    <div class="col-12 beneficios" style="margin-top: 20px;">
+      <div class="d-flex gap-3" style="display: flex; gap: 8px;">
+        <!-- Instagram Button -->
+        <button onclick="window.location.href='https://www.instagram.com/oharagil_'" class="btn flex-grow-1" style="border-width: 2px; background-color: transparent; display: flex; align-items: center; justify-content: flex-start; height: 32px; border-radius: 12px; padding: 4px 12px; border: 1px solid #808080; flex: 1;">
+          <!-- Logo do Instagram -->
+          <img src="images/Instagram_logo_2022.svg" alt="Instagram Logo" style="width: 16px; height: auto; margin-right: 8px;">
+          <!-- Texto do botão -->
+          <span style="color: #808080; font-size: 14px; font-weight: bold;">Instagram</span>
+        </button>
+
+        <!-- Telegram Button -->
+        <button onclick="window.location.href='https://t.me/+d0he8p_0lqFmOTIx'" class="btn flex-grow-1" style="border-width: 2px; background-color: transparent; display: flex; align-items: center; justify-content: flex-start; height: 32px; border-radius: 12px; padding: 4px 12px; border: 1px solid #808080; flex: 1;">
+          <!-- Logo do Telegram -->
+          <img src="images/Telegram_logo.svg" alt="Telegram Logo" style="width: 16px; height: auto; margin-right: 8px;">
+          <!-- Texto do botão -->
+          <span style="color: #808080; font-size: 14px; font-weight: bold;">Telegram</span>
+        </button>
+      </div>
+    </div>
+  
+
+
+<script>var rocket_lcp_data = {"ajax_url":"https:\/\/privacycela.com\/privacy\/wp-admin\/admin-ajax.php","nonce":"40d1c75a90","url":"https:\/\/privacycela.com\/privacy","is_mobile":false,"elements":"img, video, picture, p, main, div, li, svg, section, header","width_threshold":1600,"height_threshold":700,"delay":500,"debug":null}</script><script data-name="wpr-lcp-beacon" src="js/lcp-beacon.min.js" async=""></script>
+
+		</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-360e208 e-con-full e-flex e-con e-child" data-id="360e208" data-element_type="container">
+				<div class="elementor-element elementor-element-b30808e elementor-widget elementor-widget-heading" data-id="b30808e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">
+ASSINATURAS</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2371f74 elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="2371f74" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://pay.kirvano.com/7b0dd14d-26fd-423a-aff3-e4dc0af84843" ;"="">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Assinar (7 dias)                 R$ 14,90 (10% OFF)</span>
+					</span>
 					</a>
-				</div>
-				 
-			</div>
-		</div>
-	</nav>
-	<!-- Phone Navbar -->
-	<nav id="mobile-navbar" class="d-block navbar mobile-navbar is-hidden-desktop is-hidden-tablet animate no-shadow" aria-label="main navigation" style="z-index:1000">
-		<div class="d-block navbar-brand" style="padding-bottom: 0.6rem">
-			<a class="d-inline-flex navbar-item-logo">
-				<img src="images/logo_mobile.svg" style="max-height: 50px; max-width: 50px; height: 37px; animation: none;" alt="">
-			</a>
-			<div class="align-self-end d-inline-flex float-right">
-			 
-				 
-				 
-			</div>
-		</div>
-	</nav>
-	<div class="nav-drop-overlay" id="nav-drop-overlay"></div>
-	<div class="container-inner view-wrapper">
-		<!-- Container -->
-		<input type="hidden" id="ClienteId" value="d7391a4c-2ef8-4df3-b156-6b834aca71f3">
-		<input type="hidden" id="nomePerfil" name="nomePerfil" value="kerolaychaves">
-		<input type="hidden" id="filterMosaico" name="filterMosaico" value="">
-		<input type="hidden" id="MensagemBume">
-		<input type="hidden" id="Mensagem">
-		<input type="hidden" id="SilenciarPerfilId" name="SilenciarPerfilId" value="">
-		<div class="scroll-x-hidden-mobile-mosaic">
-			<div class="container">
-				<div class="background-custom-size bg-img-styles justify-content-end media overflow-hidden row" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9), transparent), url('images/banner2.png');">
-					<div class="align-self-end mb-n3 pb-1 order-last">
-						<ul class="mr-4 row">
-							<li>
-								<strong class="profile-numbers ml-2">
-									<span class="text-light text-counts-profile"> 50 posts </span>
-								</strong>
-							</li>
-							<li><strong class="profile-numbers ml-2"><span class="text-light text-counts-profile"></span></strong></li>
-							<li>
-								<strong class="profile-numbers ml-2">
-									<span class="text-light text-counts-profile"> 1,2k likes </span>
-								</strong>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="pl-3 pr-4 row">
-					<div class="user-img mt-n5 mr-1">
-						<div style="left:-4px;top:-4px;">
-							<div>
-								<figure class="d-inline-block bg-img-profile">
-									<img class="avatar rounded-circle" src="avatar2.jfif" id="FotoPerfil" style="max-width:96px;min-height:96px;min-width:96px;">
-									<div class="border-profile">
-									</div>
-								</figure>
-							</div>
-						</div>
-					</div>
-					<div class="px-1 flex-column align-items-start d-flex justify-content-center">
-						<div class="align-items-center d-flex mb-n2  user-title">
-							<div class="d-inline-block word-clamp-40 mb-0 mr-1">
-								<div class="d-inline-block word-clamp-40">
-									<h5 class="d-inline-block item-title mb-0 mr-1 word-clamp-40 text-profile-one">Gil Ohara</h5>
-								</div>
-							</div>
-							<div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-check-all" viewBox="0 0 16 16">
-                            <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486z"></path>
-                            </svg>							</div>
-						</div>
-						<ul class="entry-meta menu-z-index">
-							<li class="meta-privacy text-muted d-inline-block position-relative">
-								<div class="mt-1  mb-2 word-clamp-40">
-									<h6 class="text-nprofile text-ellipsis item-title mb-2 mt-0 word-clamp-40 text-profile-two "> @oharagil_ </h6>
-								</div>
-							</li>
-						</ul>
-					</div>
-				 
-				</div>
-				<div class="row">
-					<div class="col-12 mb-n2 profile-description">
-						<input type="checkbox" class="read-more-checker" id="read-more-checker">
-						<div class="limited l-200">
-							<p class="margin-left-14"> Tenho 20 aninhos e vou fazer você aproveitar o mês da melhor forma possível! Todo o meu conteúdo é explícito e muito gostoso! ! Vem passar o mês comigo!</p>
-							<div class="bottom"></div>
-						</div>
-						<label for="read-more-checker" class="view-more-button text-muted pl-3"></label>
-					</div>
-					 
-					<div id="beneficios_assinatura" style="display:none;">
-						<div class="col-12 beneficios">
-							<p class="margin-left-14 text-muted font-15"> ASSINE E TENHA OS SEGUINTES BENEFĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć‚ĀØCIOS </p>
-							<p class="margin-left-14">
-								<i class="fal fa-check"> </i> Acesso ao conteĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć…ā€”do </p>
-							<p class="margin-left-14">
-								<i class="fal fa-check"> </i> Chat exclusivo com o criador </p>
-							<p class="margin-left-14">
-								<i class="fal fa-check"> </i> Cancele a qualquer hora </p>
-						</div>
-					</div>
-				</div>
-				<div class="pl-3 pr-2 row">
-					<div class="col-12">
-						<div class="text-muted mb-3 profile-signatures"><br>
-						</div>
-						<div class="row">
-							<div class="col-12 is-multiline">
-								<div class="settings-panel">
-							<h6 class="text-center font-weight-bold mb-4">
-							ASSINE AGORA
-<div class="row justify-content-center">
-    <!-- Plano 7 dias -->
-    <div class="col-12 mb-3">
-        <button onclick="window.location.href=' https://pay.kirvano.com/7b0dd14d-26fd-423a-aff3-e4dc0af84843';" class="pulsante btn btn-primary btn-lg btn-block modal-trigger btnPagamento" style="border-width: 2px; background-color: #ffa500; color: #fff;">
-            <span class="float-left ml-2"> Assinar (7 dias) </span>
-            <span class="float-right mr-2"> R$ 19,90 </span>
-        </button>
-    </div>
 
-    <!-- Plano 1 mĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć…ā€“s -->
-    <div class="col-12 mb-3">
-        <button onclick="window.location.href='https://pay.kirvano.com/6b8d5f04-8dd8-493b-be31-964680ef9d1b';" class="pulsante btn btn-primary btn-lg btn-block modal-trigger btnPagamento" style="border-width: 2px; background-color: #ffa500; color: #fff;">
-            <span class="float-left ml-2"> assinar(1 MES) </span>
-            <span class="float-right mr-2"> R$ 29,90 </span>
-        </button>
-    </div>
-
-    <!-- Plano 3 meses -->
-    <div class="col-12">
-        <button onclick="window.location.href='https://pay.kirvano.com/551e2d66-5f76-453d-9f64-8c68ad7bc574';" class="pulsante btn btn-primary btn-lg btn-block modal-trigger btnPagamento" style="border-width: 2px; background-color: #ffa500; color: #fff;">
-            <span class="float-left ml-2"> Assinar (3 MESES) </span>
-            <span class="float-right mr-2"> R$ 59,90 </span>
-        </button>
-    </div>
+<!-- Botão Outras Opções -->
+<div id="containerOutrasOpcoes" style="text-align: right; margin-top: 5px;">
+    <button id="btnOutrasOpcoes" onclick="mostrarOpcoes()" style="background: none; border: none; color: gray; font-size: 14px; cursor: pointer;">OUTRAS OPÇÕES</button>
 </div>
 
-								</h6></div>
-										
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="is-12 mt-3">
-							<div class="row text-center text-muted">
-								<div class="col-12">
-									<div class="font-15">
-										<span onclick="EfetuarPagamento('d7391a4c-2ef8-4df3-b156-6b834aca71f3', '', '19,90', '', '', 'Mensal', '', 'kerolaychaves', 'Kerolay Chaves', 'https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMzEvNmU4ZjA2ODAtZTcxMS00ZDQ4LWE3NDItYTc3YWFjNTNlYjA3LTE3MDQwMjY2NzAwMjMuanBlZyJ9', 'https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMjcvMTA1ZjYyMTgtNzRjOS00YzQzLTgzZWYtYmE1MzgyN2ZlMTdkLTE3MDM2Mzg2NjQzNTYuanBlZyJ9')" style="cursor: pointer"> 50 posts </span>
-										<span class="ml-2 mr-2"></span>
-										<span onclick="EfetuarPagamento('d7391a4c-2ef8-4df3-b156-6b834aca71f3', '', '19,90', '', '', 'Mensal', '', 'kerolaychaves', 'Kerolay Chaves', 'https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMzEvNmU4ZjA2ODAtZTcxMS00ZDQ4LWE3NDItYTc3YWFjNTNlYjA3LTE3MDQwMjY2NzAwMjMuanBlZyJ9', 'https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMjcvMTA1ZjYyMTgtNzRjOS00YzQzLTgzZWYtYmE1MzgyN2ZlMTdkLTE3MDM2Mzg2NjQzNTYuanBlZyJ9')" style="cursor: pointer"> 25 fotos </span>
-										<span class="ml-2 mr-2"></span>
-										<span onclick="EfetuarPagamento('d7391a4c-2ef8-4df3-b156-6b834aca71f3', '', '19,90', '', '', 'Mensal', '', 'kerolaychaves', 'Kerolay Chaves', 'https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMzEvNmU4ZjA2ODAtZTcxMS00ZDQ4LWE3NDItYTc3YWFjNTNlYjA3LTE3MDQwMjY2NzAwMjMuanBlZyJ9', 'https://image.privacy.com.br/eyJidWNrZXQiOiJzZXJ2ZXJsZXNzaW1hZ2VoYW5kbGVyc291cmNlcHJpdmFjeSIsImtleSI6IjIwMjMtMTItMjcvMTA1ZjYyMTgtNzRjOS00YzQzLTgzZWYtYmE1MzgyN2ZlMTdkLTE3MDM2Mzg2NjQzNTYuanBlZyJ9')" style="cursor: pointer"> 25 videos </span>
-									</div>
-								</div>
-							</div>
-
-
-							<div class="row videopostagem fullwidth" style="position: relative; width: 108%; overflow: hidden; border-radius: 10px;">
-                                <!-- VĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā­deo de fundo -->
-                                <video style="width: 100%; height: auto;" autoplay="" muted="" loop="" playsinline="">
-                                    <source src="media/4c.mp4" type="video/mp4">
-                                </video>
-                                
-                                <!-- ConteĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć…ā€”do centralizado sobre o vĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā­deo -->
-                                <div class="overlay-content" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; text-align: center;">
-                                    
-                                    <!-- Logotipo -->
-                                    <img class="col-12 imageAcima" src="images/logo_icon_branco.png" style="height: 20%; top: 38%;">
-                                    
-                                    <!-- Texto de contagem, abaixo do logotipo -->
-                                    <div class="col-12 row m-0" style="width: 100%; max-width: 500px; top: 60%;">
-                                        <div class="col-5 text-right">
-                                            <span class="text-light text-counts-profile">50 posts</span>
-                                        </div>
-                                        <div class="col-2 text-center">
-                                            <span class="text-light text-counts-profile"></span>
-                                        </div>
-                                        <div class="col-5 text-left">
-                                            <span class="text-light text-counts-profile">1,2k likes</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <br>
-
-
-							
-
-                            <div class="row videopostagem fullwidth" style="position: relative; width: 108%; overflow: hidden; border-radius: 10px;">
-                                <!-- VĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā­deo de fundo -->
-                                <video style="width: 100%; height: auto;" autoplay="" muted="" loop="" playsinline="">
-                                    <source src="media/3v.mp4" type="video/mp4">
-                                </video>
-                                
-                                <!-- ConteĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć…ā€”do centralizado sobre o vĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā­deo -->
-                                <div class="overlay-content" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; text-align: center;">
-                                    
-                                    <!-- Logotipo -->
-                                    <img class="col-12 imageAcima" src="images/logo_icon_branco.png" style="height: 20%; top: 38%;">
-                                    
-                                    <!-- Texto de contagem, abaixo do logotipo -->
-                                    <div class="col-12 row m-0" style="width: 100%; max-width: 500px; top: 60%;">
-                                        <div class="col-5 text-right">
-                                            <span class="text-light text-counts-profile">50 posts</span>
-                                        </div>
-                                        <div class="col-2 text-center">
-                                            <span class="text-light text-counts-profile"></span>
-                                        </div>
-                                        <div class="col-5 text-left">
-                                            <span class="text-light text-counts-profile">1,2k likes</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <br>
-
-							<a>
-								<div class="row videopostagem fullwidth">
-									<img class="col-12 imageAcima" src="images/logo_icon_branco.png" style="height: 20%; top: 38%;">
-									<div class="col-12 imageAcima" style="top: 52%">
-										<div class="col-12 row m-0" style="top: 100%">
-											<div class="col-5 text-right">
-												<span class="text-light text-counts-profile">50 posts</span>
-											</div>
-											<div class="col-2 text-center">
-												<span class="text-light text-counts-profile"></span>
-											</div>
-											<div class="col-5 text-left">
-												<span class="text-light text-counts-profile">1,2k likes</span>
-											</div>
-										</div>
-									</div>
-									<img src="images/blur_7.jpg" alt="" class="rounded">
-								</div>
-							</a><br>
-
-                             
-                             
-
-
-
-						</div>
-					</div>
-				</div>
-			</div>
-		
-		<div id="cancelamento-modal" class="modal is-small has-light-bg">
-			<div class="modal-background"></div>
-			<div class="modal-content">
-				<input type="hidden" id="ClienteCancelamentoId" name="ClienteCancelamentoId" value="">
-				<div class="card">
-					<div class="card-heading">
-						<h3>Assinatura</h3>
-						<!-- Close X button -->
-						<div class="close-wrap">
-							<span class="close-modal">
-								<i class="fal fa-times"></i>
-							</span>
-						</div>
-					</div>
-					<div class="card-body">
-						<!-- Placeholder -->
-						<div class="settings-wrapper settings-wrapper2" style="padding-top: 0;">
-							<div id="overview-content" class="settings-section is-active">
-								<div class="content-section configuracao-perfil is-active">
-									<div class="settings-panel" style="padding: 0;">
-										<div class="content">
-											<div class="settings-form">
-												<div class="columns column is-12 is-multiline" style="margin-bottom: 0;">
-													<div class="column is-12">
-														<!--Field-->
-														<div class="field field-group">
-															<label>Motivo do cancelamento:</label>
-															<div class="control has-icon">
-																<select name="MotivoCancelamentoId" class="input is-fade" id="MotivoCancelamentoId" required="">
-																	<option value="" selected="">Selecione o motivo do cancelamento</option>
-																</select>
-																<div class="form-icon">
-																	<i class="fal fa-window-close"></i>
-																</div>
-															</div>
-														</div>
-														<div class="invalid-feedback"> Campo obrigatĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā³rio </div>
-													</div>
-													<div class="column is-12">
-														<div class="buttons">
-															<button class="button form-button" onclick="ConfirmarCancelamento()">Confirmar</button>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="solicitar-verificacao-modal" class="modal is-small has-light-bg">
-			<div class="modal-background"></div>
-			<div id="solicitar-verificacao-modal" class="modal-content">
-				<input type="hidden" id="profile-name" name="NomePerfil" value="">
-				<input type="hidden" id="post-success-message" name="NomePerfil" value="">
-				<div class="card">
-					<div class="card-heading">
-						<h3 style="margin-bottom:0"><b>SolicitaĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā§Ć„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā£o de VerificaĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā§Ć„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā£o</b></h3>
-						<!-- Close X button -->
-						<div class="close-wrap">
-							<span class="close-modal" onclick="CloseModal()">
-								<i class="fal fa-times"></i>
-							</span>
-						</div>
-					</div>
-					<div class="card-body">
-						<!-- Placeholder -->
-						<div id="solicitar-verificacao-modal-content" class="content-section configuracao-perfil is-active">
-							<div class="settings-panel" style="padding: 0;">
-								<div class="content">
-									<span class="mb-3" id="verificationRequest-show-loading" style="justify-content: center; align-items: center; display: none; display: flex;">
-										<i class="d-table fa fa-spin fa-spinner-third font-1-6rem m-auto text-center" style="font-size: 50px;"></i>
-									</span>
-									<div class="settings-form text-center" id="verification-request-btn" style="display: none;">
-										<div class="columns column is-12 is-multiline" style="margin-bottom: 0;">
-											<div class="column is-12 text-profile-two">
-												<p>Conquiste o <span class="text-primary"><b>Selo de Perfil Verificado</b></span> e ganhe ainda mais credibilidade.</p>
-												<div id="verification-request-expired" style="display: none;">
-													<p>
-														<span>Sua Ć„ā€ Ć‚Ę’Ć„ā‚¬Ć…ā€”ltima solicitaĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā§Ć„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā£o de verificaĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā§Ć„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā£o nĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā£o foi aprovada.</span>
-													</p>
-												</div>
-												<div class="buttons justify-content-center mt-4">
-													<button class="button form-button" onclick="PostVerificationRequest()">SOLICITAR VERIFICAĆ„ā€ Ć‚Ę’Ć„ĀĆ¢ā€Ā¬ĆÆĀæĀ½Ć„ā€ Ć‚Ę’Ć„ĖĆ¢ā‚¬ā„¢O</button>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div id="verification-request-exists" style="display: none;">
-										<div id="verification-request-pending" style="display: none;" class="col-12 mb-3">
-											<div class="mt-1">
-												<p class="text-profile-two">Sua solicitaĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā§Ć„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā£o estĆ„ā€ Ć‚Ę’Ć„ā‚¬ĆÆĀæĀ½ <b> em anĆ„ā€ Ć‚Ę’Ć„ā‚¬ĆÆĀæĀ½lise.</b><br><span class="text-center">Enviado em </span><span id="DataSolicitacao"></span></p>
-											</div>
-										</div>
-										<div id="verification-request-approved" style="display: none;" class="col-12 mb-3 text-profile-two">
-											<span class="mb-3">
-												<p>ParabĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā©ns, sua solicitaĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā§Ć„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā£o foi aprovada!</p>
-												<p>Para concluir, digite no campo abaixo o token de 6 dĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā­gitos que foi enviado atravĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā©s do correio em seu endereĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā§o cadastrado.</p>
-											</span>
-											<div class="row col-12 mb-3 d-flex justify-content-center">
-												<input type="text" class="row input is-fade col-4 text-center" id="verification-token-input" maxlength="6" placeholder="******">
-											</div>
-											<div class="buttons d-flex justify-content-center row col-12 mb-3" style="">
-												<button class="button form-button is-disabled" id="verify-token-btn" onclick="PostVerificationRequestToken()">Validar token</button>
-											</div>
-											<small class="error text-danger" style="display: none;" id="verification-token-error">Verifique o token e tente novamente.</small>
-										</div>
-										<div id="verification-request-verified" class="col-12 mb-3 text-profile-two" style="display: none;">
-											<span>ParabĆ„ā€ Ć‚Ę’Ć„ā‚¬Ć‚Ā©ns! Seu perfil foi verificado com sucesso. <i class="fa fa-badge-check light text-primary"></i></span>
-											<button class="btn-block button form-button mt-3" id="verify-token-btn" onclick="RefreshScreen()">Finalizar</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<style>
-		.tooltip-search {
-			display: inline-flex;
-			position: relative;
-			cursor: pointer;
-		}
-
-		.info-icon {
-			cursor: pointer;
-		}
-
-		.tooltip-search .tooltiptext-search {
-			visibility: hidden;
-			background-color: #454545;
-			color: #fff;
-			text-align: center;
-			border-radius: 5px;
-			padding: 2px;
-			position: absolute;
-			top: -25px;
-			left: -570%;
-			transform: translateX(-50%);
-			opacity: 0;
-			transition: opacity 0.2s;
-			width: 320px;
-			font-size: 12px;
-		}
-
-		.tooltip-search:hover .info-icon+.tooltiptext-search,
-		.tooltip-search.active .info-icon+.tooltiptext-search {
-			visibility: visible;
-			opacity: 1;
-		}
-		</style>
-	
-	<privacy-web-tip id="privacy-web-tip" app-settings="eyJQUklWQUNZX1VSTCI6Imh0dHBzOi8vcHJpdmFjeS5jb20uYnIiLCJQUklWQUNZX01PRFVMRVMiOiJodHRwczovL21vZHVsZXMucHJpdmFjeS5jb20uYnIiLCJFTkRQT0lOVF9BUElfTEVHQUNZIjoiaHR0cHM6Ly9zZXJ2aWNlLnByaXZhY3kuY29tLmJyL2xlZ2FjeS8iLCJFTkRQT0lOVF9BUElfUFJJVkFDWSI6Imh0dHBzOi8vc2VydmljZS5wcml2YWN5LmNvbS5ici9sZWdhY3kvIiwiRU5EUE9JTlRfQVBJX0ZJTkFOQ0lBTCI6Imh0dHBzOi8vc2VydmljZS5wcml2YWN5LmNvbS5ici9maW5hbmNpYWwvIiwiRU5EUE9JTlRfQVBJX0NIQVQiOiJodHRwczovL3NlcnZpY2UucHJpdmFjeS5jb20uYnIvY2hhdCIsIkVORFBPSU5UX0FQSV9QUklWQUNZX0ROUyI6Imh0dHBzOi8vc2VydmljZS5wcml2YWN5LmNvbS5ici9sZWdhY3kiLCJFTkRQT0lOVF9BUElfUEFZTUVOVCI6Imh0dHBzOi8vc2VydmljZS5wcml2YWN5LmNvbS5ici9wYXltZW50IiwiRU5EUE9JTlRfQVBJX01FRElBIjoiaHR0cHM6Ly9zZXJ2aWNlLnByaXZhY3kuY29tLmJyL21lZGlhIiwiRU5EUE9JTlRfQVBJX1BST0ZJTEUiOiJodHRwczovL3NlcnZpY2UucHJpdmFjeS5jb20uYnIvcHJvZmlsZS8ifQ==" token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4NmFhMjYyYy0wZmY0LTQwYzYtYjFiOS0xMGY4ODBiZmE1YjUiLCJlbWFpbCI6ImNvbnRhdG8ucmhkQGdtYWlsLmNvbSIsInVpZCI6IjQyNzMyOTYiLCJhaWQiOiI3ODFhNmM2MC01YTZmLTRjZDUtOWM4My1iZDFhZTgwOGFjZmUiLCJjb3VudHJ5IjoiQlIiLCJpYXQiOjE3MzA5ODM4NzMsInByb2ZpbGVfbmFtZSI6Ijc4MUE2QzYwLTVBNkYtNENENS05QzgzLUJEMUFFODA4QUNGRSIsInJvbGUiOiJDbGllbnQiLCJleHAiOjE3MzEwMDU1MzIsImlzcyI6IlByaXZhY3kifQ.2GxtiHVdRC5nrOaZMiU8HdEvqS3wpm87e6p9b-g3ouI" token-v1="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiQ29tdW0iLCJzdWIiOiI3ODFhNmM2MC01YTZmLTRjZDUtOWM4My1iZDFhZTgwOGFjZmUiLCJJZFVzdWFyaW8iOiI3ODFhNmM2MC01YTZmLTRjZDUtOWM4My1iZDFhZTgwOGFjZmUiLCJlbWFpbCI6ImNvbnRhdG8ucmhkQGdtYWlsLmNvbSIsImJpcnRoZGF0ZSI6IjE5MDAtMDEtMDEiLCJqdGkiOiI3M2ExYjBiMS0wZWVmLTQxZWQtYTViMy1kZTVhMGZiMjhmZWYiLCJuYmYiOjE3MzA5ODM5MzIsImlhdCI6MTczMDk4Mzg3MiwiZXhwIjoxNzMxMDA1NTMyLCJpc3MiOiJwcml2YWN5In0.sFuQzVvt2P_anqSgKASeNHcPIIdDUvtkFOG90KIpDbQ" locale="pt-BR"></privacy-web-tip>
- 
-	<privacy-web-payment id="privacy-web-payment" locale="pt-BR" app-settings="eyJFTkRQT0lOVF9BUElfRklOQU5DSUFMIjoiaHR0cHM6Ly9zZXJ2aWNlLnByaXZhY3kuY29tLmJyL2ZpbmFuY2lhbC8iLCJQUklWQUNZX1VSTCI6Imh0dHBzOi8vcHJpdmFjeS5jb20uYnIiLCJQUklWQUNZX01PRFVMRVMiOiJodHRwczovL21vZHVsZXMucHJpdmFjeS5jb20uYnIiLCJFTkRQT0lOVF9BUElfQ0hBVCI6Imh0dHBzOi8vc2VydmljZS5wcml2YWN5LmNvbS5ici9jaGF0IiwiRU5EUE9JTlRfQVBJX1BBWU1FTlQiOiJodHRwczovL3NlcnZpY2UucHJpdmFjeS5jb20uYnIvcGF5bWVudCIsIkVORFBPSU5UX0FQSV9QUklWQUNZIjoiaHR0cHM6Ly9zZXJ2aWNlLnByaXZhY3kuY29tLmJyL2xlZ2FjeS8iLCJFTkRQT0lOVF9BUElfUFJJVkFDWV9ETlMiOiJodHRwczovL3NlcnZpY2UucHJpdmFjeS5jb20uYnIvbGVnYWN5IiwiRU5EUE9JTlRfQVBJX01FRElBIjoiaHR0cHM6Ly9zZXJ2aWNlLnByaXZhY3kuY29tLmJyL21lZGlhIiwiRU5EUE9JTlRfQVBJX1BST0ZJTEUiOiJodHRwczovL3NlcnZpY2UucHJpdmFjeS5jb20uYnIvcHJvZmlsZS8ifQ==" token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4NmFhMjYyYy0wZmY0LTQwYzYtYjFiOS0xMGY4ODBiZmE1YjUiLCJlbWFpbCI6ImNvbnRhdG8ucmhkQGdtYWlsLmNvbSIsInVpZCI6IjQyNzMyOTYiLCJhaWQiOiI3ODFhNmM2MC01YTZmLTRjZDUtOWM4My1iZDFhZTgwOGFjZmUiLCJjb3VudHJ5IjoiQlIiLCJpYXQiOjE3MzA5ODM4NzMsInByb2ZpbGVfbmFtZSI6Ijc4MUE2QzYwLTVBNkYtNENENS05QzgzLUJEMUFFODA4QUNGRSIsInJvbGUiOiJDbGllbnQiLCJleHAiOjE3MzEwMDU1MzIsImlzcyI6IlByaXZhY3kifQ.2GxtiHVdRC5nrOaZMiU8HdEvqS3wpm87e6p9b-g3ouI" token-v1="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiQ29tdW0iLCJzdWIiOiI3ODFhNmM2MC01YTZmLTRjZDUtOWM4My1iZDFhZTgwOGFjZmUiLCJJZFVzdWFyaW8iOiI3ODFhNmM2MC01YTZmLTRjZDUtOWM4My1iZDFhZTgwOGFjZmUiLCJlbWFpbCI6ImNvbnRhdG8ucmhkQGdtYWlsLmNvbSIsImJpcnRoZGF0ZSI6IjE5MDAtMDEtMDEiLCJqdGkiOiI3M2ExYjBiMS0wZWVmLTQxZWQtYTViMy1kZTVhMGZiMjhmZWYiLCJuYmYiOjE3MzA5ODM5MzIsImlhdCI6MTczMDk4Mzg3MiwiZXhwIjoxNzMxMDA1NTMyLCJpc3MiOiJwcml2YWN5In0.sFuQzVvt2P_anqSgKASeNHcPIIdDUvtkFOG90KIpDbQ" value="0" has-restrictions="true"></privacy-web-payment>
- 
- 
-	<privacy-web-antifraud-report id="privacy-web-antifraud-report" app-settings="eyJQUklWQUNZX01PRFVMRVMiOiJodHRwczovL21vZHVsZXMucHJpdmFjeS5jb20uYnIiLCJFTkRQT0lOVF9BUElfQVVUSCI6Imh0dHBzOi8vc2VydmljZS5wcml2YWN5LmNvbS5ici9hdXRoLyIsIkVORFBPSU5UX0FQSV9QUk9GSUxFIjoiaHR0cHM6Ly9zZXJ2aWNlLnByaXZhY3kuY29tLmJyL3Byb2ZpbGUvIiwiRU5EUE9JTlRfQVBJX1JFRkVSIjoiaHR0cHM6Ly9zZXJ2aWNlLnByaXZhY3kuY29tLmJyL3JlZmVyIiwiRU5EUE9JTlRfQVBJX0xFR0FDWSI6Imh0dHBzOi8vc2VydmljZS5wcml2YWN5LmNvbS5ici9sZWdhY3kvIiwiRU5EUE9JTlRfQVBJX0FOVElGUkFVRF9SRVBPUlQiOiJodHRwczovL3NlcnZpY2UucHJpdmFjeS5jb20uYnIvYW50aWZyYXVkcmVwb3J0LyJ9" token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4NmFhMjYyYy0wZmY0LTQwYzYtYjFiOS0xMGY4ODBiZmE1YjUiLCJlbWFpbCI6ImNvbnRhdG8ucmhkQGdtYWlsLmNvbSIsInVpZCI6IjQyNzMyOTYiLCJhaWQiOiI3ODFhNmM2MC01YTZmLTRjZDUtOWM4My1iZDFhZTgwOGFjZmUiLCJjb3VudHJ5IjoiQlIiLCJpYXQiOjE3MzA5ODM4NzMsInByb2ZpbGVfbmFtZSI6Ijc4MUE2QzYwLTVBNkYtNENENS05QzgzLUJEMUFFODA4QUNGRSIsInJvbGUiOiJDbGllbnQiLCJleHAiOjE3MzEwMDU1MzIsImlzcyI6IlByaXZhY3kifQ.2GxtiHVdRC5nrOaZMiU8HdEvqS3wpm87e6p9b-g3ouI" token-v1="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiQ29tdW0iLCJzdWIiOiI3ODFhNmM2MC01YTZmLTRjZDUtOWM4My1iZDFhZTgwOGFjZmUiLCJJZFVzdWFyaW8iOiI3ODFhNmM2MC01YTZmLTRjZDUtOWM4My1iZDFhZTgwOGFjZmUiLCJlbWFpbCI6ImNvbnRhdG8ucmhkQGdtYWlsLmNvbSIsImJpcnRoZGF0ZSI6IjE5MDAtMDEtMDEiLCJqdGkiOiI3M2ExYjBiMS0wZWVmLTQxZWQtYTViMy1kZTVhMGZiMjhmZWYiLCJuYmYiOjE3MzA5ODM5MzIsImlhdCI6MTczMDk4Mzg3MiwiZXhwIjoxNzMxMDA1NTMyLCJpc3MiOiJwcml2YWN5In0.sFuQzVvt2P_anqSgKASeNHcPIIdDUvtkFOG90KIpDbQ" locale="pt-BR" reported-profile-id="00000000-0000-0000-0000-000000000000"></privacy-web-antifraud-report>
- 
-	<div id="heart-wrapper" class="heart-wrapper">
-		<lottie-player id="like-lottie-player" src="/assets/js/heart.json?_=20241106185630731Z" background="transparent.html" speed="1" style="width: 250px; height: 250px;" direction="1" mode="normal"></lottie-player>
-	</div> 
-	  <iframe allow="join-ad-interest-group" data-tagging-id="AW-10819293233" data-load-time="1730984977643" height="0" width="0" src="10819293233.html" style="display: none; visibility: hidden;"></iframe><iframe height="0" width="0" style="display: none; visibility: hidden;" src="saved_resource.html"></iframe>
-
-
+<!-- Opções adicionais -->
+<div id="opcoesAdicionais" style="display: none; margin-top: 10px;">
+    <div style="text-align: right; margin-bottom: 10px;">
+        <button id="btnVoltar" onclick="ocultarOpcoes()" style="background: none; border: none; color: gray; font-size: 14px; cursor: pointer;">VOLTAR</button>
+    </div>
+    <button onclick="window.location.href='https://pay.kirvano.com/6b8d5f04-8dd8-493b-be31-964680ef9d1b';" class="elementor-button elementor-button-link elementor-size-sm" style="width: 100%; margin-bottom: 10px;">
+        <span class="float-left ml-2">Assinar (1 mes)</span>
+        <span class="float-right mr-2">R$ 24,90 (15% OFF)</span>
+    </button>
+    <button onclick="window.location.href='https://pay.kirvano.com/551e2d66-5f76-453d-9f64-8c68ad7bc574';" class="elementor-button elementor-button-link elementor-size-sm" style="width: 100%; margin-bottom: 10px;">
+        <span class="float-left ml-2">Assinar (3 meses)</span>
+        <span class="float-right mr-2">R$ 44,90 (50% OFF)</span>
+    </button>
+</div>
 
 <script>
-  window.pixelId = "677043d79d0e0fb9273c7082";
-  var a = document.createElement("script");
-  a.setAttribute("async", "");
-  a.setAttribute("defer", "");
-  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-  document.head.appendChild(a);
-</script></body></html>
+    function mostrarOpcoes() {
+        document.getElementById('opcoesAdicionais').style.display = 'block';
+        document.getElementById('containerOutrasOpcoes').style.display = 'none';
+    }
+
+    function ocultarOpcoes() {
+        document.getElementById('opcoesAdicionais').style.display = 'none';
+        document.getElementById('containerOutrasOpcoes').style.display = 'block';
+    }
+</script>
+
+
+<script type="text/javascript">
+
+</script>
+
+
+
+				</div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-62deedc elementor-hidden-desktop elementor-hidden-tablet e-flex e-con-boxed e-con e-parent" data-id="62deedc" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-9c3997a e-con-full e-flex e-con e-child" data-id="9c3997a" data-element_type="container">
+				<div class="elementor-element elementor-element-a04b666 elementor-widget elementor-widget-heading" data-id="a04b666" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">
+ 60 posts</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-a8a4b12 elementor-view-default elementor-widget elementor-widget-icon" data-id="a8a4b12" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="512" height="512"><path d="M12,17c-2.76,0-5-2.24-5-5s2.24-5,5-5,5,2.24,5,5-2.24,5-5,5Z"></path></svg>			</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-a3a8f95 elementor-widget elementor-widget-heading" data-id="a3a8f95" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">
+ 30 fotos</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-10c8923 elementor-view-default elementor-widget elementor-widget-icon" data-id="10c8923" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="512" height="512"><path d="M12,17c-2.76,0-5-2.24-5-5s2.24-5,5-5,5,2.24,5,5-2.24,5-5,5Z"></path></svg>			</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-8fba207 elementor-widget elementor-widget-heading" data-id="8fba207" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">
+ 30 vídeos</h2>		</div>
+				</div>
+				<div class="row videopostagem fullwidth" style="position: relative; width: 108%; overflow: hidden; border-radius: 10px;">
+    
+     
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem de Posts</title>
+    <style>
+        /* CSS para o layout */
+        .counts-container {
+            display: flex; /* Alinha os itens em uma linha */
+            justify-content: space-between; /* Distribui espaço entre os itens */
+            align-items: center; /* Centraliza verticalmente os itens */
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .text-item {
+            flex: 1; /* Garante que os itens ocupem espaços iguais */
+            text-align: center; /* Centraliza o texto dentro do item */
+        }
+
+        .text-item:first-child {
+            text-align: right; /* Alinha o primeiro item à direita */
+        }
+
+        .text-item:last-child {
+            text-align: left; /* Alinha o último item à esquerda */
+        }
+
+        .text-light {
+            color: #808080; /* Texto cinza */
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            font-weight: normal; /* Remove o negrito */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* Fundo branco (default) */
+            height: 100vh;
+        }
+    </style>
+
+
+    <!-- Texto de contagem, abaixo do logotipo -->
+    <div class="counts-container">
+        <div class="text-item">
+            <span class="text-light text-counts-profile">60 posts</span>
+        </div>
+        <div class="text-item">
+            <span class="text-light text-counts-profile">•</span>
+        </div>
+        <div class="text-item">
+            <span class="text-light text-counts-profile">1,2k likes</span>
+        </div>
+    </div>
+
+
+        <img src="images/blur_7.jpg" alt="" class="rounded" style="width: 100%; height: auto;">
+    </div>
+
+
+<br>
+
+<script type="text/javascript">
+
+</script>
+
+
+	
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-11cc1db elementor-hidden-desktop elementor-hidden-tablet e-flex e-con-boxed e-con e-parent" data-id="11cc1db" data-element_type="container" data-settings="{" background_background":"classic"}"="">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-a6b9876 e-con-full e-flex e-con e-child" data-id="a6b9876" data-element_type="container">
+				<div class="elementor-element elementor-element-c4b8196 elementor-widget elementor-widget-image" data-id="c4b8196" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="376" height="91" src="images/logo.svg" class="attachment-full size-full wp-image-19" alt="">													</div>
+				</div>
+				<div class="elementor-element elementor-element-46be2d7 elementor-widget elementor-widget-heading" data-id="46be2d7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">
+Assine e desbloqueie todo conteúdo🔥</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-fa61e8a elementor-widget elementor-widget-heading" data-id="fa61e8a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">
+</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2248fd8 elementor-mobile-align-justify elementor-widget-mobile__width-initial elementor-widget elementor-widget-button" data-id="2248fd8" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://pay.kirvano.com/8b2acdf8-5c31-440c-8d41-b3bb481582f9">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Assinar (1 mês)                 R$24,90 / mês</span>
+					</span>
+					</a>
+				</div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+					<script type="text/javascript">
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<script id="wp-block-template-skip-link-js-after">
+	( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
+
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
+
+		/*
+		 * Get the site wrapper.
+		 * The skip-link will be injected in the beginning of it.
+		 */
+		sibling = document.querySelector( '.wp-site-blocks' );
+
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
+
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
+
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerHTML = 'Pular para o conteúdo';
+
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );
+	
+</script>
+<script id="wp-statistics-tracker-js-extra">
+var WP_Statistics_Tracker_Object = {"requestUrl":"https:\/\/privacycela.com\/privacy\/wp-json\/wp-statistics\/v2","ajaxUrl":"https:\/\/privacycela.com\/privacy\/wp-admin\/admin-ajax.php","hitParams":{"wp_statistics_hit":1,"source_type":"home","source_id":7,"search_query":"","signature":"3ce0eb226d55486c7e444a85f1371928","endpoint":"hit"},"onlineParams":{"wp_statistics_hit":1,"source_type":"home","source_id":7,"search_query":"","signature":"3ce0eb226d55486c7e444a85f1371928","endpoint":"online"},"option":{"userOnline":true,"consentLevel":"disabled","dntEnabled":false,"bypassAdBlockers":false,"isWpConsentApiActive":false,"trackAnonymously":false,"isPreview":false},"jsCheckTime":"60000"};
+</script>
+<script src="js/tracker.js" id="wp-statistics-tracker-js"></script>
+<script src="js/webpack-pro.runtime.min.js" id="elementor-pro-webpack-runtime-js"></script>
+<script src="js/webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
+<script src="js/jquery.min.js" id="jquery-core-js"></script>
+<script src="js/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script src="js/frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
+<script src="js/hooks.min.js" id="wp-hooks-js"></script>
+<script src="js/i18n.min.js" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/privacycela.com\/privacy\/wp-admin\/admin-ajax.php","nonce":"f93c52ee7e","urls":{"assets":"https:\/\/privacycela.com\/privacy\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/privacycela.com\/privacy\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/privacycela.com\/privacy\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script src="js/frontend.min.js" id="elementor-pro-frontend-js"></script>
+<script src="js/core.min.js" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar","a11yCarouselWrapperAriaLabel":"Carrossel | Rolagem horizontal: Setas para esquerda e direita","a11yCarouselPrevSlideMessage":"Slide anterior","a11yCarouselNextSlideMessage":"Pr\u00f3ximo slide","a11yCarouselFirstSlideMessage":"Este \u00e9 o primeiro slide","a11yCarouselLastSlideMessage":"Este \u00e9 o \u00faltimo slide","a11yCarouselPaginationBulletMessage":"Ir para o slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Dispositivos m\u00f3veis no modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Dispositivos m\u00f3veis no modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet no modo retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet no modo paisagem","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Notebook","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Tela ampla (widescreen)","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.25.11","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_optimized_control_loading":true,"e_onboarding":true,"e_css_smooth_scroll":true,"theme_builder_v2":true,"home_screen":true,"nested-elements":true,"editor_v2":true,"e_element_cache":true,"link-in-bio":true,"floating-buttons":true,"launchpad-checklist":true,"display-conditions":true,"form-submissions":true,"taxonomy-filter":true,"search":true},"urls":{"assets":"https:\/\/privacycela.com\/privacy\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/privacycela.com\/privacy\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/privacycela.com\/privacy\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"1ebbb4ad84"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":7,"title":"Privacy","excerpt":"","featuredImage":false}};
+</script>
+<script src="js/frontend.min_1.js" id="elementor-frontend-js"></script>
+<script src="js/elements-handlers.min.js" id="pro-elements-handlers-js"></script>
+	<script>var rocket_lcp_data = {"ajax_url":"https:\/\/privacycela.com\/privacy\/wp-admin\/admin-ajax.php","nonce":"40d1c75a90","url":"https:\/\/privacycela.com\/privacy","is_mobile":false,"elements":"img, video, picture, p, main, div, li, svg, section, header","width_threshold":1600,"height_threshold":700,"delay":500,"debug":null}</script><script data-name="wpr-lcp-beacon" src="js/lcp-beacon.min.js" async=""></script>
+
+
+
+
+<script type="text/javascript">
+
+</script>
+
+
+</div></body></html><!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1734746706 -->
